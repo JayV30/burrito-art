@@ -1,0 +1,95 @@
+	body {
+		font-size: 62.5%;
+	}
+	
+	body, html {
+		position:relative;
+	}
+	
+	#content, body, html {
+		height:100%;
+		width:100%;
+	}
+	
+	@font-face {
+	  font-family: 'Raleway';
+	  font-style: normal;
+	  font-weight: 400;
+	  src: local('Raleway'), url('../font/raleway400.woff') format('woff');
+	}
+
+	.logo {
+		float:right;
+		clear:right;
+		width:25%;
+		margin:2% 2% 0 0;
+	}
+	
+	.sm_float {
+		float:right;
+		clear:right;
+		width:25%;
+		margin: 1% 2% 0 0;
+	}
+		
+	.sm_icon {
+		display:inline-block;
+		width:100%;
+	}
+	
+	a.fade {
+		display:inline-block;
+		-khtml-opacity:.40; 
+		-moz-opacity:.40; 
+		-ms-filter:"alpha(opacity=40)";
+		filter:alpha(opacity=40);
+		filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.4);
+		opacity:.40; 
+		-webkit-transition: opacity .2s ease-in; /*safari and chrome */
+		-o-transition: opacity .2s ease-in; /* opera */
+	}
+
+	a.fade:hover {
+		display:inline-block;
+		border: none;
+		-khtml-opacity:.80; 
+		-moz-opacity:.80; 
+		-ms-filter:"alpha(opacity=80)";
+		opacity: 0.80;
+		filter: alpha(opacity=80);
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; 
+	}
+	
+	.fade {
+		width:18%;
+		background-position:center top;
+		background-repeat: no-repeat;
+	}
+	
+	.fb {
+		margin:0 4% 0 15%;
+	}
+	
+	.insta {
+		margin:0 4%;
+	}
+	
+	.mail {
+		margin:0 0 0 4%;
+	}	
+		
+	.clearfix {
+		clear:both;
+	}
+
+	.bottomText {
+		width:100%;
+		text-align:left;
+		font-family: 'Raleway', sans-serif;
+		font-weight:400;
+		color:#b7b7b7;
+		font-size:0.7em;
+		bottom:0;
+		position:absolute;
+	}
+	
