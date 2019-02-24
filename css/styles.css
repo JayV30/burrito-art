@@ -75,7 +75,7 @@
 
 	.fade {
 		width:10%;
-		max-width: 50px;
+		max-width: 44px;
 	}
 	.fade:not(:last-child) {
 		margin-right: 5px;
