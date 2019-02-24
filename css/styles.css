@@ -1,16 +1,16 @@
 	body {
 		font-size: 62.5%;
 	}
-	
+
 	body, html {
 		position:relative;
 	}
-	
+
 	#content, body, html {
 		height:100%;
 		width:100%;
 	}
-	
+
 	@font-face {
 	  font-family: 'Raleway';
 	  font-style: normal;
@@ -18,66 +18,69 @@
 	  src: local('Raleway'), url('../font/raleway400.woff') format('woff');
 	}
 
+	.logo-wrapper {
+		overflow: hidden;
+		margin-bottom: 10px;
+	}
+
 	.logo {
 		float:right;
 		clear:right;
-		width:25%;
+		width:40%;
 		margin:2% 2% 0 0;
+		max-width: 200px;
 	}
-	
-	.sm_float {
-		float:right;
-		clear:right;
-		width:25%;
-		margin: 1% 2% 0 0;
+
+	.sm {
+		overflow: hidden;
+		text-align: right;
+		margin-right: 2%;
 	}
-		
+
 	.sm_icon {
 		display:inline-block;
 		width:100%;
 	}
-	
+
 	a.fade {
 		display:inline-block;
-		-khtml-opacity:.40; 
-		-moz-opacity:.40; 
+		-khtml-opacity:.40;
+		-moz-opacity:.40;
 		-ms-filter:"alpha(opacity=40)";
 		filter:alpha(opacity=40);
 		filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.4);
-		opacity:.40; 
+		opacity:.40;
 		-webkit-transition: opacity .2s ease-in; /*safari and chrome */
 		-o-transition: opacity .2s ease-in; /* opera */
+		transition: opacity .2s ease-in;
+		-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+		user-select: none;
+		outline: none !important;
 	}
 
 	a.fade:hover {
 		display:inline-block;
 		border: none;
-		-khtml-opacity:.80; 
-		-moz-opacity:.80; 
+		-khtml-opacity:.80;
+		-moz-opacity:.80;
 		-ms-filter:"alpha(opacity=80)";
 		opacity: 0.80;
 		filter: alpha(opacity=80);
-		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; 
+		-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 	}
-	
+
 	.fade {
-		width:18%;
-		background-position:center top;
-		background-repeat: no-repeat;
+		width:10%;
+		max-width: 50px;
 	}
-	
-	.fb {
-		margin:0 4% 0 15%;
+	.fade:not(:last-child) {
+		margin-right: 5px;
 	}
-	
-	.insta {
-		margin:0 4%;
-	}
-	
-	.mail {
-		margin:0 0 0 4%;
-	}	
-		
+
 	.clearfix {
 		clear:both;
 	}
@@ -88,8 +91,11 @@
 		font-family: 'Raleway', sans-serif;
 		font-weight:400;
 		color:#b7b7b7;
-		font-size:0.7em;
+		font-size:0.8em;
 		bottom:0;
 		position:absolute;
 	}
-	
+
+	.bottomText p {
+		margin: 0 0 5px 5px;
+	}
